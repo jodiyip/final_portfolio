@@ -13,12 +13,13 @@ h1{
 }
 
 h2{
-	color: #F3D4F2;
+	color: #660066;
 }
 
 body{
 	font-family: 'Helvetica', sans-serif;
 	text-align: center;
+	padding-bottom: 70px;
 }
 
 li{
@@ -89,24 +90,21 @@ footer{
 
 /*index*/
 .homepage{
-	width:600px;
-	height:600px;
+	width:auto;
+	height:auto;
 	/*clear:both;*/
-
 }
+
 .homepage>div{
 	width:200px;
 	height:200px;
 	float:left;
-	line-height:100px;
-	text-align:center;    
+	line-height:50px;   
 }
 .homepage>div>img{
-	display:inline-block;
 	vertical-align:middle;
 	max-width:98%;
 	max-height:98%;
-	justify-content: center;
 }
 
 .bio{
@@ -186,7 +184,7 @@ footer{
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #660066;
   color: white;
   transform: rotateY(180deg);
 }
@@ -291,12 +289,31 @@ footer{
   	grid-column: 2 / span 2;
 	grid-row: 2;
   }
+
+  .nav{
+    display:inline-flex;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    display:inline-flex;
+  }
+
+  .nav_item a{
+    padding: 10px;
   }
 }
 
